@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundamentos parte 3</title>
 </head>
 <body>
     <h1>Functions</h1>
@@ -39,6 +39,26 @@
             let s = nv1 * nv2
             res.innerHTML = `A multiplicação entre ${nv1} e ${nv2} é igual a ${s}`
         }
+    </script>
+
+    <br>
+
+    <p>Deixando a primeira letra da frase em maiúsculo</p>
+    <script>
+        String.prototype.capitalizeque = function() {
+	        return this.charAt(0).toUpperCase() + this.substr(1)
+        }
+        console.log(capitalize('olá mundo'))
+    </script>
+
+    <br>
+
+    <p>Retornando a última letra da frase</p>
+    <script>
+        String.prototype.lastLetterque = function() {
+	        return this.charAt(lastLetterque.length - 1)
+        }
+        console.log(lastLetterque('mundo'))
     </script>
 
 </body>
